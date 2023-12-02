@@ -114,7 +114,7 @@ int main(int argc, char* argv[])
 			     conv_out_bit[test_case], conv_relu_en[test_case], conv_out_scale[test_case], cycle_num, freqset, divset, divset_pad);	
     ShowConfig(cfg);
 
-//calloc vgg date
+//calloc vgg data
     int len_read_feature=cfg->CHin*cfg->Hin*cfg->Win;
     int8_t *read_feature = (int8_t *)calloc(len_read_feature,sizeof(int8_t));
 	if (read_feature == NULL){
